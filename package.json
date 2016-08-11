@@ -2,9 +2,9 @@
   "name": "reterm",
   "version": "1.0.0",
   "description": "hterm is a JS library that provides a terminal emulator.  It is reasonably fast, reasonably correct, and reasonably portable across browsers.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": " karma start",
+    "test": " karma start --single-run",
     "build": "babel src --out-dir lib",
     "prepublish": "npm test && npm run build"
   },

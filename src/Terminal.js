@@ -15,7 +15,7 @@ import Size from './Size'
 import TextAttributes from './TextAttributes'
 import VT from './VT'
 import IO from './terminal/IO'
-import { desktopNotificationTitle } from 'hterm'
+import { desktopNotificationTitle, getClientSize } from './hterm'
 
 /**
  * Constructor for the Terminal class.
