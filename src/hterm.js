@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import { Chrome, Local } from 'reterm-libdot/lib/storage';
+import resource from 'reterm-libdot/lib/resource';
 
 /**
  * The type of window hosting hterm.
