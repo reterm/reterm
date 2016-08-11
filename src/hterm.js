@@ -4,6 +4,7 @@
 
 import { Chrome, Local } from 'reterm-libdot/lib/storage';
 import resource from 'reterm-libdot/lib/resource';
+import bell from 'base64!../audio/bell.ogg'
 
 /**
  * The type of window hosting hterm.
@@ -132,3 +133,5 @@ if (isPackagedApp) {
     setTimeout(onWindow.bind(null, {type: 'normal'}), 0);
   }
 }
+
+resource.add('hterm/audio/bell', 'audio/ogg;base64', bell);
