@@ -1,0 +1,52 @@
+{
+  "name": "reterm",
+  "version": "1.0.0",
+  "description": "hterm is a JS library that provides a terminal emulator.  It is reasonably fast, reasonably correct, and reasonably portable across browsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": " karma start",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm test && npm run build"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "./test/setup.js"
+    ],
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reterm/reterm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reterm/reterm/issues"
+  },
+  "homepage": "https://github.com/reterm/reterm#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "karma": "^1.1.2",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-cli": "^1.0.1",
+    "karma-mocha": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.0.2",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "reterm-libdot": "^1.0.0"
+  }
+}
