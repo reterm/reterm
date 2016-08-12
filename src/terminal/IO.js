@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import { encodeUTF8 } from 'reterm-libdot/lib/utf8'
+import Frame from '../Frame'
 
 /**
  * Input/Output interface used by commands to communicate with the terminal.
@@ -60,7 +61,7 @@ IO.prototype.showOverlay = function(message, opt_timeout) {
  * @param {Object} opt_options Optional frame options.  Not implemented.
  */
 IO.prototype.createFrame = function(url, opt_options) {
-  return new hterm.Frame(this.terminal_, url, opt_options);
+  return new Frame(this.terminal_, url, opt_options);
 };
 
 /**
