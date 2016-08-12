@@ -4,7 +4,7 @@
 
 import colors from 'reterm-libdot/lib/colors';
 import f from 'reterm-libdot/lib/f';
-import { UTF8Decoder } from 'reterm-libdot/lib/utf8'
+import { UTF8Decoder, encodeUTF8 } from 'reterm-libdot/lib/utf8'
 import CharacterMap from './vt/CharacterMap'
 
 /**
@@ -457,7 +457,7 @@ VT.prototype.decode = function(str) {
  * See also: http://en.wikipedia.org/wiki/UTF-16
  */
 VT.prototype.encodeUTF8 = function(str) {
-  return lib.encodeUTF8(str);
+  return encodeUTF8(str);
 };
 
 /**
